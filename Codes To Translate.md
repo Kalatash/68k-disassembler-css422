@@ -1,0 +1,38 @@
+#Codes to Impliment
+
+##MOVE
+Byte: 0001 DDDD DDSS SSSS  
+Word: 0011 DDDD DDSS SSSS  
+Long: 0010 DDDD DDSS SSSS
+##MOVEA
+Word: 0011 DDD0 01SS SSSS  
+Long: 0010 DDD0 01SS SSSS
+##MOVEM
+
+##ADD, ADDA
+
+##SUB, SUBQ
+
+##MULS, DIVS
+
+##LEA
+
+##OR, ORI
+
+##NEG
+
+##EOR
+
+##LSR, LSL
+
+##ASR, ASL
+
+##ROL, ROR
+
+##BCLR
+
+##CMP, CMPI
+
+##Bcc (BCS, BGE, BLT, BVC)
+
+##BRA, JSR, RTS
