@@ -11,7 +11,7 @@ A0:
 A1:	  
 A2:	  
 A3:	  
-A4:	Start of translations  
-A5:	Current Word  
+A4:	Current Word  
+A5:	Start of translations  
 A6:	End of translations  
 A7:	Stack  
