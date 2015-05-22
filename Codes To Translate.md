@@ -1,3 +1,33 @@
+#Table of commands
+`0000`: BCLR, CMPI, OrI  
+`0001`: MOVE.B  
+`0010`: MOVE.L, MOVEA.L  
+`0011`: MOVE.W, MOVEA.W  
+`0100`: MOVEM, LEA, NEG, JSR, RTS  
+`0101`: SUBQ  
+`0110`: Bcc, BRA  
+`0111`: ----  
+`1000`: DIVS, OR  
+`1001`: SUB  
+`1010`: ----  
+`1011`: EOR, CMP  
+`1100`: MULS  
+`1101`: ADD, ADDA  
+`1110`: LSR/LSL, ASR/ASL, ROL/ROR  
+`1111`: ---- 
+
+#Table of EA
+| EA Mode | Mode Code | Register |  
+| --------|-----------|----------|  
+| Dn | 000 | nnn |  
+| An | 001 | nnn |  
+| \(An\) | 010 | nnn |  
+| \#\<data\> | 111 | 100 |  
+| \(An\)+ | 011 | nnn |  
+| -\(An\) | 100 | nnn |  
+| \(xxx\).W | 111 | 000 |  
+| \(xxx\).L | 111 | 001 |  
+
 #Codes to Impliment
 ##MOVE
 Byte: 0001 DDDD DDSS SSSS  
@@ -80,20 +110,3 @@ Stat: 0000 1000 10AA AAAA 0000 0000 NNNN NNNN
 4-169
 
 
-##Table of commands
-0000: BCLR, CMPI, OrI  
-0001: MOVE.B  
-0010: MOVE.L, MOVEA.L  
-0011: MOVE.W, MOVEA.W
-0100: MOVEM, LEA, NEG, JSR, RTS  
-0101: SUBQ  
-0110: Bcc, BRA  
-0111: ----  
-1000: DIVS, OR  
-1001: SUB  
-1010: ----  
-1011: EOR, CMP  
-1100: MULS  
-1101: ADD, ADDA  
-1110: LSR/LSL, ASR/ASL, ROL/ROR  
-1111: ---- 
