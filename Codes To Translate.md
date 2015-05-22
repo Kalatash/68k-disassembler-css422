@@ -28,7 +28,7 @@
 | \(xxx\).W | 111 | 000 |  
 | \(xxx\).L | 111 | 001 |  
 
-#Codes to Impliment
+#Codes to Implement
 ##MOVE
 Byte: 0001 DDDD DDSS SSSS  
 Word: 0011 DDDD DDSS SSSS  
