@@ -3,7 +3,7 @@ D0:	Trap Code
 D1:	I/O  
 D2:	  
 D3:	  
-D4:	  
+D4:	Data from A4  
 D5:	  
 D6:	  
 D7:	  
