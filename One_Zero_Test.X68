@@ -12,6 +12,13 @@ START:  ORG    $7000        ; first instruction of program
     MOVE.B  D5, Addr_One
     MOVE.W  A5, Addr_One
     MOVE.W  D2, D3
+    
+    MOVE.L  #$1234, D5
+    MOVE.L  D5, Addr_Two
+    MOVE.L  #$1234ABCD, D4
+    
+    MOVEA.W D5, A5
+    MOVEA.L D5, A4
 
 
     MOVE.B  #9, D0           ; End
@@ -25,6 +32,7 @@ Addr_Thr    DS.W    4
 Addr_Fou    DS.W    4
 
     END    START        ; last line of source
+
 
 *~Font name~Courier New~
 *~Font size~10~
